@@ -31,6 +31,37 @@ class Solution {
         // Map:        2 -> 0, 6 -> 1, 5 -> 2, 8 -> 3, 11 -> 4
         // Complement: 12,     8,      9,      6,      3
     }
+
+    public int[] twoSumOptimal(int[] arr, int target) {
+        // Map to store: Value -> Index
+        int[][] numsWithIndex = new int[arr.length][2];
+
+        // Store element with original index
+        for (int i = 0; i < arr.length; i++) {
+            numsWithIndex[i][0] = arr[i];
+            numsWithIndex[i][1] = i;
+        }    
+
+        // Sort by the value to apply two-pointer
+        Arrays.sort(numsWithIndex, (a, b) -> Integer.compare(a[0], b[0]));
+
+        int left = 0, right = arr.length - 1;
+        while (left < right) {
+            int sum = numsWithIndex[left][0] + numsWithIndex[right][0];
+            if (sum == target) {
+                // Return original indices of the two numbers found
+                return new int[] {numsWithIndex[left][1], numsWithIndex[right][1]};
+            } else if (sum < target) {
+                // Increase sum by moving left pointer forward
+                left++;
+            } else {
+                // Decrease sum by moving right pointer backward
+                right--;
+            }
+        }
+
+        return new int[]{-1, -1};
+    }
 }
 
 public class twoSum {
@@ -53,6 +84,16 @@ public class twoSum {
 
         int[] answer = sol.twoSum(arr, target);
         
+        // Fix: Check for -1 instead of > 0, because 0 is a valid index.
+        if (answer[0] != -1) {
+            System.out.println("arr[" + answer[0] + "] + arr[" + answer[1] + "] = " + target);
+            System.out.println("Indices: [" + answer[0] + ", " + answer[1] + "]");
+        } else {
+            System.out.println("There exist no such two numbers whose sum is equal to the target.");
+        }
+
+        answer = sol.twoSumOptimal(arr, target);
+
         // Fix: Check for -1 instead of > 0, because 0 is a valid index.
         if (answer[0] != -1) {
             System.out.println("arr[" + answer[0] + "] + arr[" + answer[1] + "] = " + target);

@@ -1,4 +1,7 @@
+package Easy;
 import java.util.*;
+
+import Solution;
 
 class Solution {
     // Function to find union of two sorted arrays using two pointers

@@ -1,7 +1,10 @@
+package Easy;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
+
+import Solution;
 
 class Solution {
 

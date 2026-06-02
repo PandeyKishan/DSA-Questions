@@ -1,5 +1,7 @@
 import java.util.*;
 
+import Medium.Solution;
+
 // Merge Sort - O(nlogn)
 // Uses divide and conquer algorithm by dividing the array into smaller sub-arrays recursively until a single element is reached for both sides and sorting both left and right halves 
 class Solution {

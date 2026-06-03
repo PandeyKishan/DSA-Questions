@@ -1,7 +1,4 @@
-package Easy;
 import java.util.*;
-
-import Solution;
 
 class Solution {
     public int numberOnceUsingMap(int[] arr) {

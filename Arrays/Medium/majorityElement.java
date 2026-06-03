@@ -1,4 +1,3 @@
-package Medium;
 import java.util.*;
 
 class Solution {
@@ -35,8 +34,9 @@ class Solution {
         int count = 0, element = -1;
 
         // Step 1: Find the potential majority element
+        // 2 2 1 2 2 1 3 3 3 2
         for(int i = 0; i < nums.length; i++) {
-            if (count == 0) {
+            if (count == 0) {                 
                 element = nums[i];
                 count++;
             } else if (nums[i] == element) 
@@ -83,7 +83,7 @@ public class majorityElement {
 
         System.out.println("\nThe majority element of the array is: " + answer);
 
-        answer = sol.majorityElement(arr);
+        answer = sol.majorityElementOptimal(arr);
 
         System.out.println("\n[Optimal] The majority element of the array is: " + answer);
     }

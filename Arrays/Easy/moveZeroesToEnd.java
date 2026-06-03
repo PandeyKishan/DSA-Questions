@@ -1,7 +1,4 @@
-package Easy;
 import java.util.*;
-
-import Solution;
 
 class Solution {
     // Function to move zeroes to the end

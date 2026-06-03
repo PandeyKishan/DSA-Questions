@@ -1,7 +1,4 @@
-package Easy;
 import java.util.Scanner;
-
-import Solution;
 
 class Solution {
 

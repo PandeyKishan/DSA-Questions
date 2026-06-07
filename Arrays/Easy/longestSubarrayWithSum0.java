@@ -38,18 +38,18 @@ class Solution {
             // otherwise check if this sum was seen before
             else {
                 // when seen, zero-sum segment between previous index + 1 and i
-                if (map.containsKey(sum)) {
-                    // maximize length
-                    max_length = Math.max(max_length, i - map.get(sum));
-                }
-                // first time seeing this sum
-                else {
-                    // record index
-                    map.put(sum, i);
-                }
+                // if (map.containsKey(sum)) {
+                //     // maximize length
+                //     max_length = Math.max(max_length, i - map.get(sum));
+                // }
+                // // first time seeing this sum
+                // else {
+                //     // record index
+                //     map.put(sum, i);
+                // }
             }
 
-            /* ------- FOR ANY VALUE K
+            // ------- FOR ANY VALUE K
             // If (sum - k) was seen before, it means the elements between 
             // that index and current index sum up to k.
             if (map.containsKey(sum - k)) {
@@ -61,7 +61,7 @@ class Solution {
             if (!map.containsKey(sum)) {
                 map.put(sum, i);
             }
-             -------  */
+            //  -------  
         }
 
         return max_length;
@@ -84,10 +84,11 @@ public class longestSubarrayWithSum0 {
         System.out.println("\nArray: " + Arrays.toString(arr));
         
         // For longestSubarrayWithSum0, we usually assume k = 0
-        int k = 0;
+        System.out.println("\nEnter sum to be checked: ");
+        int k = sc.nextInt();
 
         int length = sol.longestSubarrayPrefixSum(arr, k);
-        System.out.println("\n[Prefix Sum] Longest subarray with sum 0 has length: " + length);
+        System.out.println("\n[Prefix Sum] Longest subarray with sum " + k + " has length: " + length);
     }
 }
 

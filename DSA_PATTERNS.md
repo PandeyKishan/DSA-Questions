@@ -1,5 +1,7 @@
 # DSA Problem-Solving Patterns
 
+> **Detailed Reference:** [View associated questions on Notion](https://app.notion.com/p/02c5b97edab68328959781cf36901c4a?v=6005b97edab6825daa938889ce8a96da&pvs=32)
+
 This document serves as a cheat sheet for the common patterns and algorithm names used in this repository.
 
 ## 1. The Two-Pointer Pattern

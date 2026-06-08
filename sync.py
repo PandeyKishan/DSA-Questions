@@ -38,16 +38,26 @@ def update_patterns(file_path, q_num, q_name, pattern_name):
     found_section = False
     added = False
     
-    for line in lines:
+    for i, line in enumerate(lines):
         new_lines.append(line)
         if pattern_name.lower() in line.lower() and line.startswith('##'):
             found_section = True
+            section_index = i
             continue
         
-        if found_section and line.strip() == "" and not added:
-            new_lines.append(f"- {q_name} (Q{q_num})\n")
-            added = True
-            found_section = False
+        if found_section:
+            if line.startswith('##'): # Hit next section
+                # Insert before this line
+                new_lines.insert(-1, f"- {q_name} (Q{q_num})\n")
+                added = True
+                found_section = False
+            elif line.strip() == "" and not added:
+                new_lines.append(f"- {q_name} (Q{q_num})\n")
+                added = True
+                found_section = False
+    
+    if found_section and not added: # Hit EOF
+        new_lines.append(f"- {q_name} (Q{q_num})\n")
             
     with open(file_path, 'w', encoding='utf-8') as f:
         f.writelines(new_lines)

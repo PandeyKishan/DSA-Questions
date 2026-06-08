@@ -15,7 +15,10 @@ When you finish solving a question, simply type **"Sync"** or **"Sync my last qu
 4. **Documentation:** 
    - `DSA_APPROACHES.md` is updated with the next question number.
    - `DSA_PATTERNS.md` is updated under the correct technical category.
-5. **Git Commit:** Your changes are automatically staged and committed with a clean message (e.g., `Add solution for Q54: myNewProblem`).
+5. **Git Sync:** 
+   - I perform a `git pull` to get latest changes.
+   - I perform a `git commit` with a clean message.
+   - I perform a `git push` to synchronize your remote repository automatically.
 
 ## 🛠️ The Sync Script (`sync.py`)
 

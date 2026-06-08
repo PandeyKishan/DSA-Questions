@@ -53,3 +53,4 @@ This document serves as a cheat sheet for the common patterns and algorithm name
 - **Right-to-Left Scan (Suffix Max):** Leaders in an Array (Q43).
 - **HashSet Sequence Building:** Longest Consecutive Sequence (Q44).
 - **Reversal Algorithm:** Rotate Array by K (Q27).
+- **Prefix & Suffix Products:** Product of Array Except Self (Q55).

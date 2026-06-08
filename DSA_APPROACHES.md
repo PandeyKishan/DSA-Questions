@@ -69,4 +69,5 @@ This file contains the detailed optimal approaches for every question solved in 
 52. **Pascal’s Triangle:** For a specific element, use the **combination formula** $C(n, r)$. For the Nth row, use the **linear formula** $val = val * (N - k) / k$. For the full triangle, generate each row by **summing adjacent elements** of the row above.
 53. Majority Element - II (>N/3): **Extended Boyer-Moore Voting Algorithm**. Since there can be at most two elements appearing more than $N/3$ times, maintain two potential candidates and two counters. Perform a second pass to verify the exact counts of these two candidates before adding them to the result.
 54. **Two Numbers Appearing Once:** XOR all elements to get `x ^ y`, find the rightmost set bit to partition elements into two groups, and XOR each group separately to find the two unique numbers.
+55. **Product of Array Except Self:** Use two passes to calculate prefix products and suffix products respectively, storing their product in the result array to avoid division.
 

@@ -85,6 +85,10 @@ def main():
     q_num = get_next_question_number(approaches_md)
     print(f"🚀 Syncing Q{q_num}: {q_name}...")
     
+    # Git Pull first to avoid conflicts
+    print("📥 Pulling latest changes...")
+    subprocess.run(["git", "pull"], check=False)
+
     update_approaches(approaches_md, q_num, approach)
     if pattern:
         update_patterns(patterns_md, q_num, q_name, pattern)
@@ -92,10 +96,12 @@ def main():
     else:
         print(f"📝 Updated Approaches (No pattern specified)")
 
-    # Git automation
+    # Git automation: Add, Commit, and Push
+    print("📤 Committing and Pushing changes...")
     subprocess.run(["git", "add", "."], check=True)
     subprocess.run(["git", "commit", "-m", f"Add solution for Q{q_num}: {q_name}"], check=True)
-    print(f"✅ Changes committed to Git.")
+    subprocess.run(["git", "push"], check=True)
+    print(f"✅ Changes pushed to remote repository.")
 
 if __name__ == "__main__":
     main()

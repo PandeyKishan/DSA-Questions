@@ -15,10 +15,11 @@ Whenever the user says **"Sync"**, **"Sync my last question"**, or adds a new so
    - Identify the correct **Pattern** category (e.g., Two-Pointer, Prefix Sum, Kadane's) by matching it against the headers in `DSA_PATTERNS.md`.
 3. **Execution:** Use the `run_shell_command` to execute the sync script:
    `python sync.py "<file_path>" --approach "<inferred_approach>" --pattern "<inferred_pattern>"`
+   *Note: The script now handles `git pull` before updates and `git push` after committing.*
 4. **Validation:** Confirm to the user that:
    - `DSA_APPROACHES.md` has been updated.
    - `DSA_PATTERNS.md` has been updated.
-   - The changes have been committed to Git.
+   - The changes have been pulled, committed, and pushed to the remote repository.
 
 ### **Reference Files:**
 - `sync.py`: The logic for updating Markdown and Git.

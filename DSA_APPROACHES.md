@@ -71,3 +71,4 @@ This file contains the detailed optimal approaches for every question solved in 
 54. **Two Numbers Appearing Once:** XOR all elements to get `x ^ y`, find the rightmost set bit to partition elements into two groups, and XOR each group separately to find the two unique numbers.
 55. **Product of Array Except Self:** Use two passes to calculate prefix products and suffix products respectively, storing their product in the result array to avoid division.
 
+56. Calculate prefix products in one pass and multiply with suffix products in a reverse pass to avoid division.

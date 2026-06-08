@@ -24,14 +24,14 @@ This document serves as a cheat sheet for the common patterns and algorithm name
 
 ## 4. Voting & Greedy Algorithms
 *Optimized O(N) solutions for specific conditions.*
-- **Boyer-Moore Voting:** Majority Element (>N/2) (Q38).
-- **Extended Boyer-Moore:** Majority Element (>N/3) (Q50).
+- **Boyer-Moore Voting:** Majority Element - 1 (Q38).
+- **Extended Boyer-Moore:** Majority Element - II (Q53).
 - **Kadane’s Algorithm:** Maximum Subarray Sum (Q39).
 - **Greedy Tracking:** Stock Buy and Sell (Q40).
 
 ## 5. Mathematical & Bit Manipulation
 - **XOR Logic ($a \oplus a = 0$):** Number appearing once (Q33).
-- **Partitioned XOR:** Two Numbers Appearing Once (Q54).
+- **Set Bit Modulo 3:** Unique Element - II (Q50).
 - **Gauss' Formula ($n(n+1)/2$):** Missing Number (Q31).
 - **Euclidean Algorithm:** GCD of two numbers (Q4).
 - **Lexicographical Order:** Next Permutation (Q42).
@@ -53,4 +53,4 @@ This document serves as a cheat sheet for the common patterns and algorithm name
 - **Right-to-Left Scan (Suffix Max):** Leaders in an Array (Q43).
 - **HashSet Sequence Building:** Longest Consecutive Sequence (Q44).
 - **Reversal Algorithm:** Rotate Array by K (Q27).
-- **Prefix & Suffix Products:** Product of Array Except Self (Q55).
+- **Prefix & Suffix Products:** Product Without Self (Q54).

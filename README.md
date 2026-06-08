@@ -7,6 +7,7 @@ Welcome to my DSA practice repository. This workspace contains both my solved pr
 ### 🧠 Practice Problems
 The core of this repository is organized by data structure and algorithm topics:
 - **[DSA Problem-Solving Patterns](DSA_PATTERNS.md)**: A quick-reference guide for algorithmic patterns (Two-Pointer, Kadane's, Boyer-Moore, etc.).
+- **[DSA Question Approaches](DSA_APPROACHES.md)**: Detailed optimal approaches for every problem solved in this repo.
 - **Arrays/**: Solutions categorized by difficulty (Easy, Medium, Hard).
 - **Basics and Maths/**: Fundamental concepts and mathematical problems.
 - **Hashing/**: Practice with hash maps and frequency counting.

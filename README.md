@@ -26,6 +26,7 @@ All external learning materials are located in the `Resources/` folder, organize
 ## 🚀 How to Use
 1. **To Solve Problems**: Navigate to the respective topic folder (e.g., `Arrays/Medium`) to find specific problem implementations.
 2. **To Study**: Check the `Resources/` directory for roadmaps or cheatsheets to guide your learning or prepare for interviews.
+3. **To Sync**: After solving a new question, simply tell your AI assistant to **"Sync"**. The assistant will automatically analyze your code, update the approach and pattern sheets, and commit the changes. See **[AUTOMATION.md](AUTOMATION.md)** for details.
 
 ---
 *Happy Coding!*

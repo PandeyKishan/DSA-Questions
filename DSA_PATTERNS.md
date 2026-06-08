@@ -31,6 +31,7 @@ This document serves as a cheat sheet for the common patterns and algorithm name
 
 ## 5. Mathematical & Bit Manipulation
 - **XOR Logic ($a \oplus a = 0$):** Number appearing once (Q33).
+- **Partitioned XOR:** Two Numbers Appearing Once (Q54).
 - **Gauss' Formula ($n(n+1)/2$):** Missing Number (Q31).
 - **Euclidean Algorithm:** GCD of two numbers (Q4).
 - **Lexicographical Order:** Next Permutation (Q42).

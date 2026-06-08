@@ -11,14 +11,14 @@ class Solution {
 
         productArray[0] = 1;
         for (int i = 1; i < n; i++) {
-            productArray[i] = productArray[i - 1] * nums[i - 1];
+            productArray[i] = productArray[i - 1] * nums[i - 1]; // product[i - 1] gives us the prefix product of all elements before i (stored till i - 1) in the previous iteration.
         }
 
         int suffixProduct = 1;
 
         for (int i = n - 1; i >= 0; i--) {
-            productArray[i] = productArray[i] * suffixProduct;
-            suffixProduct = suffixProduct * nums[i];
+            productArray[i] = productArray[i] * suffixProduct; 
+            suffixProduct = suffixProduct * nums[i]; // keeps track of the running suffix product till i, which can be used in the next iteration.
         }
 
         return productArray;

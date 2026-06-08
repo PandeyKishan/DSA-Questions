@@ -72,3 +72,4 @@ This file contains the detailed optimal approaches for every question solved in 
 55. **Product of Array Except Self:** Use two passes to calculate prefix products and suffix products respectively, storing their product in the result array to avoid division.
 
 56. Calculate prefix products in one pass and multiply with suffix products in a reverse pass to avoid division.
+57. **Product of Array Except Self:** Compute prefix products in a forward pass and suffix products in a backward pass to get the result in O(N) time and O(1) space.

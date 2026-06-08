@@ -64,9 +64,8 @@ This file contains the detailed optimal approaches for every question solved in 
 
 ### **Arrays (Hard)**
 49. **First Missing Positive:** **Cyclic Sort**: Place every number $X$ at index $X-1$ if it's within $[1, N]$. The first index $i$ where `arr[i] != i+1` reveals the answer.
-50. **Unique Element II (>N/3):** **Extended Boyer-Moore Voting**; maintain two candidates and two counters to find elements appearing more than one-third of the time.
-51. **Three Sum:** First, **Sort** the array. Iterate through the array using a pointer `i`. For each `i`, use **Two Pointers** (`left` and `right`) to find pairs such that `arr[i] + arr[left] + arr[right] == target`. Skip duplicate elements for all three pointers to ensure unique triplets.
-52. **Pascal’s Triangle:** For a specific element, use the **combination formula** $C(n, r)$. For the Nth row, use the **linear formula** $val = val * (N - k) / k$. For the full triangle, generate each row by **summing adjacent elements** of the row above.
-53. Majority Element - II (>N/3): **Extended Boyer-Moore Voting Algorithm**. Since there can be at most two elements appearing more than $N/3$ times, maintain two potential candidates and two counters. Perform a second pass to verify the exact counts of these two candidates before adding them to the result.
-54. **Two Numbers Appearing Once:** XOR all elements to get `x ^ y`, find the rightmost set bit to partition elements into two groups, and XOR each group separately to find the two unique numbers.
-55. **Product of Array Except Self:** Compute prefix products in a forward pass and suffix products in a backward pass to find product except self in O(N) time and O(1) space.
+50. **Three Sum:** First, **Sort** the array. Iterate through the array using a pointer `i`. For each `i`, use **Two Pointers** (`left` and `right`) to find pairs such that `arr[i] + arr[left] + arr[right] == target`. Skip duplicate elements for all three pointers to ensure unique triplets.
+51. **Pascal’s Triangle:** For a specific element, use the **combination formula** $C(n, r)$. For the Nth row, use the **linear formula** $val = val * (N - k) / k$. For the full triangle, generate each row by **summing adjacent elements** of the row above.
+52. **Majority Element - II (>N/3):** **Extended Boyer-Moore Voting Algorithm**. Since there can be at most two elements appearing more than $N/3$ times, maintain two potential candidates and two counters. Perform a second pass to verify the exact counts of these two candidates before adding them to the result.
+53. **Two Numbers Appearing Once:** XOR all elements to get `x ^ y`, find the rightmost set bit to partition elements into two groups, and XOR each group separately to find the two unique numbers.
+54. **Product of Array Except Self:** Compute prefix products in a forward pass and suffix products in a backward pass to find product except self in O(N) time and O(1) space.

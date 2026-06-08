@@ -8,6 +8,7 @@ class Solution {
      */
     public int firstMissingPositiveOptimal(int[] arr) {
         int n = arr.length;
+        
         for (int i = 0; i < n; i++) {
             // if arr[i] is within the range [1, n] and arr[i]
             // is not placed at (arr[i]-1)th index in arr

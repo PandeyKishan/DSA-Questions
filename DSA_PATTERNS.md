@@ -36,6 +36,7 @@ This document serves as a cheat sheet for the common patterns and algorithm name
 - **Euclidean Algorithm:** GCD of two numbers (Q4).
 - **Lexicographical Order:** Next Permutation (Q42).
 
+- appearsOnlyOnce (Q55)
 ## 6. Cyclic Sort Pattern
 *Used when elements are in the range [1, N].*
 - **"Home Index" Placement:** First Missing Positive (Q49), Find Duplicate Number.

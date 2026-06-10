@@ -11,6 +11,7 @@ This document serves as a cheat sheet for the common patterns and algorithm name
 - **Read & Write Pointers:** Move Zeroes to End (Q28).
 - **Merge-step Pointers:** Union of Sorted Arrays (Q30).
 
+- fourSum (Q56)
 ## 2. Prefix Sum + Hash Map Pattern
 *Used for subarray problems with specific sums (handles negative numbers/zeros).*
 - **Index Tracking:** Longest Subarray with Sum 0 (Q35).

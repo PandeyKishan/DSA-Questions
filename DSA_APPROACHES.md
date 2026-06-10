@@ -72,3 +72,4 @@ This file contains the detailed optimal approaches for every question solved in 
 53. **Majority Element - II:** **Extended Boyer-Moore Voting Algorithm**: Maintain two candidates and two counters to find elements appearing more than $N/3$ times, then verify with a second pass.
 54. **Product Without Self:** Calculate prefix products in a forward pass and multiply them with suffix products in a backward pass to get the result in $O(N)$ time and $O(1)$ space without division.
 55. XOR all elements to find the unique number as a ^ a = 0
+56. O(N^3) two-pointer approach with sorting and duplicate handling

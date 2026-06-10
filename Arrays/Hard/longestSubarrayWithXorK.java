@@ -2,52 +2,62 @@ import java.util.*;
 
 class Solution {
     /**
-     * Prefix XOR + HashMap Approach
+     * Prefix Sum + HashMap Approach
      * Time Complexity: O(N)
      * Space Complexity: O(N)
      */
-    public int longestSubarrayWithXorK(int[] arr, int k) {
+    public int countSubarrayPrefixSum(int[] arr, int k) {
         HashMap<Integer, Integer> map = new HashMap<>();
         int xor = 0;
-        int maxLen = 0;
+        int n = arr.length;
+        int len = 0;
 
-        for (int i = 0; i < arr.length; i++) {
+        for(int i = 0; i < n; i++) {
             xor ^= arr[i];
 
-            // Case 1: The prefix itself XORs to K
-            if (xor == k) {
-                maxLen = i + 1;
-            }
+            // Case 1: Subarray from index 0 to i has XOR sum K
+            if(xor == k)
+                len = i + 1;
 
-            // Case 2: Check if xor ^ some_previous_xor == k
-            // By property: some_previous_xor = xor ^ k
-            int target = xor ^ k;
-            if (map.containsKey(target)) {
-                maxLen = Math.max(maxLen, i - map.get(target));
-            }
+               // Case 2: Check if there is a prefix with XOR sum such that 
+               // (prefix_xor ^ target_xor) == K => target_xor = prefix_xor ^ K
+            else {
+                if(map.containsKey(xor ^ k)) {
+                    len = Math.max(len, i - map.get(xor ^ k));
+                }
 
-            // Store only the first occurrence to maximize the length
-            if (!map.containsKey(xor)) {
-                map.put(xor, i);
+                // Only store the first occurrence of the prefix XOR to maximize length                
+                if(!map.containsKey(xor)) {
+                    map.put(xor, i);
+                }
             }
         }
 
-        return maxLen;
+        return len;
+        
     }
 }
 
 public class longestSubarrayWithXorK {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         Solution sol = new Solution();
         
-        int[] arr1 = {4, 2, 2, 6, 4};
-        int k1 = 6;
-        System.out.println("Input: " + Arrays.toString(arr1) + ", K: " + k1);
-        System.out.println("Output: " + sol.longestSubarrayWithXorK(arr1, k1)); // Expected: 4 ([4, 2, 2, 6])
+        System.out.println("Enter size of array: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            System.out.println("Enter number " + (i + 1) + ":");
+            arr[i] = sc.nextInt();
+        }
 
-        int[] arr2 = {5, 6, 7, 8, 9};
-        int k2 = 5;
-        System.out.println("\nInput: " + Arrays.toString(arr2) + ", K: " + k2);
-        System.out.println("Output: " + sol.longestSubarrayWithXorK(arr2, k2)); // Expected: 1 ([5])
+        System.out.println("\nArray: " + Arrays.toString(arr));
+        
+        // For longestSubarrayWithSum0, we usually assume k = 0
+        System.out.println("\nEnter XOR to be checked: ");
+        int k = sc.nextInt();
+
+        int length = sol.countSubarrayPrefixSum(arr, k);
+        System.out.println("\n[Prefix Sum] Longest subarray with XOR " + k + " has length: " + length);
     }
 }

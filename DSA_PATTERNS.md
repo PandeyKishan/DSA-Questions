@@ -14,6 +14,7 @@ This document serves as a cheat sheet for the common patterns and algorithm name
 - **Frequency Tracking:** Count Subarray Sum Equals K (Q48).
 - **Complement Lookup:** Two Sum (Q36).
 
+- longestSubarrayWithXorK (Q57)
 - longestSubarrayWithXorK (Q56)
 ## 3. Sliding Window Pattern
 *Used for contiguous subsegments (mostly for positive numbers).*

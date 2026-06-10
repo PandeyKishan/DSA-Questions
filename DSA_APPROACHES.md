@@ -74,3 +74,4 @@ This file contains the detailed optimal approaches for every question solved in 
 55. **Four Sum:** Use two nested loops and two pointers with sorting and duplicate skipping to find all unique quadruplets that sum to the target ($O(N^3)$).
 56. Use Prefix XOR and a HashMap to store the first occurrence of each XOR sum to find the longest subarray
 57. Use HashMap to store first occurrence of prefix XORs to find maximum length subarray with XOR sum K.
+58. Use HashMap to track frequencies of prefix XORs; add frequency of (prefixXOR ^ K) to count at each step.

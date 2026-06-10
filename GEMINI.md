@@ -7,7 +7,7 @@ This file contains the foundational mandates for any Gemini CLI agent working in
 This repository uses a custom automation workflow to synchronize code changes with documentation.
 
 ### **Agent Mandate:**
-Whenever the user says **"Sync"**, **"Sync my last question"**, or adds a new solution, the agent MUST perform the following steps **autonomously (without asking for confirmation)**:
+The agent MUST perform the following steps **ONLY** when the user explicitly issues the directive **"Sync"** or **"Sync my last question"**. The agent MUST NOT initiate this workflow automatically upon detecting new files or changes without this specific command.
 
 1. **Detection:** Identify the most recently modified or newly created `.java` file in the workspace (excluding resource files).
 2. **AI Analysis:** 

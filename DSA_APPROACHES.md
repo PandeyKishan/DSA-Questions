@@ -73,3 +73,4 @@ This file contains the detailed optimal approaches for every question solved in 
 54. **Product Without Self:** Calculate prefix products in a forward pass and multiply them with suffix products in a backward pass to get the result in $O(N)$ time and $O(1)$ space without division.
 55. **Number Appears Once (XOR):** XOR all elements to find the unique number; identical numbers cancel out ($a \oplus a = 0$).
 56. **Four Sum:** Use two nested loops and two pointers with sorting and duplicate skipping to find all unique quadruplets that sum to the target ($O(N^3)$).
+57. Use two nested loops and two pointers with sorting and duplicate skipping to find all unique quadruplets that sum to the target (O(N^3))

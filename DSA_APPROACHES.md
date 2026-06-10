@@ -71,5 +71,5 @@ This file contains the detailed optimal approaches for every question solved in 
 52. **Pascal’s Triangle:** Generate each row by summing adjacent elements of the previous row; alternatively, use the formula $C(n, r) = C(n, r-1) \times (n-r+1)/r$ for direct element calculation.
 53. **Majority Element - II:** **Extended Boyer-Moore Voting Algorithm**: Maintain two candidates and two counters to find elements appearing more than $N/3$ times, then verify with a second pass.
 54. **Product Without Self:** Calculate prefix products in a forward pass and multiply them with suffix products in a backward pass to get the result in $O(N)$ time and $O(1)$ space without division.
-55. XOR all elements to find the unique number as a ^ a = 0
-56. O(N^3) two-pointer approach with sorting and duplicate handling
+55. **Number Appears Once (XOR):** XOR all elements to find the unique number; identical numbers cancel out ($a \oplus a = 0$).
+56. **Four Sum:** Use two nested loops and two pointers with sorting and duplicate skipping to find all unique quadruplets that sum to the target ($O(N^3)$).

@@ -22,6 +22,12 @@ class Solution {
             // Add the frequency of 'remove' to count:
             count += map.getOrDefault(remove, 0);
 
+            // If this prefix sum has been seen before,
+            // add its count to the result
+            // if (prefixSumCount.containsKey(remove)) {
+            //     count += prefixSumCount.get(remove);
+            // }
+
             // Update the count of current prefix sum in the map
             map.put(preSum, map.getOrDefault(preSum, 0) + 1);
         }

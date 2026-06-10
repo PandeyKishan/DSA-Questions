@@ -8,7 +8,6 @@ This document serves as a cheat sheet for the common patterns and algorithm name
 *Used for processing sorted arrays or in-place modifications.*
 - **Slow & Fast Pointers:** Remove Duplicates (Q25), Detect Cycle.
 - **Opposite Ends:** Reverse Array (Q9), Palindrome String (Q10), Two Sum in sorted array, Four Sum (Q56).
-- fourSum (Q57)
 ## 2. Prefix Sum + Hash Map Pattern
 *Used for subarray problems with specific sums (handles negative numbers/zeros).*
 - **Index Tracking:** Longest Subarray with Sum 0 (Q35).
@@ -28,7 +27,7 @@ This document serves as a cheat sheet for the common patterns and algorithm name
 - **Greedy Tracking:** Stock Buy and Sell (Q40).
 
 ## 5. Mathematical & Bit Manipulation
-- **XOR Logic ($a \oplus a = 0$):** Number appearing once (Q33, Q55).
+- **XOR Logic ($a \oplus a = 0$):** Number appearing once (Q33).
 - **Set Bit Modulo 3:** Unique Element - II (Q50).
 ## 6. Cyclic Sort Pattern
 *Used when elements are in the range [1, N].*

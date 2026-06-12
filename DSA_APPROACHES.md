@@ -199,3 +199,4 @@ This file contains the detailed optimal approaches for every question solved in 
 58. **Merge Sorted Arrays:**
     - **Approach:** Use **Three Pointers** (`i`, `j`, `k`) starting from the end of both arrays. Compare elements from `nums1` and `nums2`, and place the larger element at the end of `nums1`.
     - **Efficiency:** This optimal approach avoids extra space and unnecessary shifting, completing the merge in $O(M+N)$ time and $O(1)$ space.
+59. Two approaches: 1. Cyclic Sort - Place each number X at index X-1; the index i where arr[i] != i+1 reveals the repeating (arr[i]) and missing (i+1) numbers. 2. XOR Logic - XOR all array elements and numbers 1 to N to find X^Y, then partition into two groups based on the rightmost set bit to isolate the numbers.

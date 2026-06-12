@@ -30,6 +30,7 @@ This document serves as a cheat sheet for the common patterns and algorithm name
 - **XOR Logic ($a \oplus a = 0$):** Number appearing once (Q33), Two Unique Elements (Q50).
 - **Combination Logic:** Pascal's Triangle (Q52).
 
+- findRepeatingMissing (Q59)
 ## 6. Cyclic Sort Pattern
 *Used when elements are in the range [1, N].*
 - **"Home Index" Placement:** First Missing Positive (Q49), Find Duplicate Number.

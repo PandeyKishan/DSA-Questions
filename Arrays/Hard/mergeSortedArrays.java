@@ -48,7 +48,7 @@ class Solution {
 
     /**
      * Optimal Approach
-     * Time Complexity: O(M*N)
+     * Time Complexity: O(M+N)
      * Space Complexity: O(1)
      */
     public void mergeOptimal(int[] nums1, int m, int[] nums2, int n) {

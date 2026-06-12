@@ -196,4 +196,6 @@ This file contains the detailed optimal approaches for every question solved in 
 
 57. **Count Subarrays with XOR Sum K:**
     - **Approach:** Use a **HashMap** to track the frequency of prefix XORs. The number of subarrays ending at the current index with XOR sum $K$ is the frequency of $(prefixXOR \oplus K)$ previously stored in the map.
-58. Use three pointers (i, j, k) starting from the end to merge nums2 into nums1 in-place by placing the larger element at the back.
+58. **Merge Sorted Arrays:**
+    - **Approach:** Use **Three Pointers** (`i`, `j`, `k`) starting from the end of both arrays. Compare elements from `nums1` and `nums2`, and place the larger element at the end of `nums1`.
+    - **Efficiency:** This optimal approach avoids extra space and unnecessary shifting, completing the merge in $O(M+N)$ time and $O(1)$ space.

@@ -21,7 +21,9 @@ The agent MUST perform the following steps **ONLY** when the user explicitly iss
    - `DSA_PATTERNS.md` has been updated.
    - The changes have been pulled, committed, and pushed to the remote repository.
 
-### **Reference Files:**
+### **Autonomous Execution:**
+- The agent is authorized to execute `run_shell_command` autonomously for the sync workflow and related git operations (status, add, commit, push) once the initial "Sync" directive is given.
+- Do not use `ask_user` to request permission for standard project scripts or git commands.
 - `sync.py`: The logic for updating Markdown and Git.
 - `AUTOMATION.md`: Detailed documentation of this workflow for the user.
 - `DSA_PATTERNS.md`: The index of all algorithmic patterns used.

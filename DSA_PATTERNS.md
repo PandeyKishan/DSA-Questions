@@ -9,6 +9,7 @@ This document serves as a cheat sheet for the common patterns and algorithm name
 - **Slow & Fast Pointers:** Remove Duplicates (Q25), Detect Cycle.
 - **Opposite Ends:** Reverse Array (Q9), Palindrome String (Q10), Two Sum in sorted array, Three Sum (Q51), Four Sum (Q55).
 
+- mergeSortedArrays (Q58)
 ## 2. Prefix Sum + Hash Map Pattern
 *Used for subarray problems with specific sums (handles negative numbers/zeros).*
 - **Index Tracking:** Longest Subarray with Sum 0 (Q35), Longest Subarray with XOR Sum K (Q56).

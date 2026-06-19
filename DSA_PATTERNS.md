@@ -26,6 +26,7 @@ This document serves as a cheat sheet for the common patterns and algorithm name
 - **Kadane’s Algorithm:** Maximum Subarray Sum (Q39).
 - **Greedy Tracking:** Stock Buy and Sell (Q40).
 
+- maximumProductSubarray (Q61)
 ## 5. Mathematical & Bit Manipulation
 - **XOR Logic ($a \oplus a = 0$):** Number appearing once (Q33), Two Unique Elements (Q50).
 - **Combination Logic:** Pascal's Triangle (Q52).

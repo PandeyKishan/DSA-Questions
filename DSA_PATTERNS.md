@@ -40,6 +40,7 @@ This document serves as a cheat sheet for the common patterns and algorithm name
 - **Dutch National Flag (3-way Partition):** Sort 0s, 1s, 2s (Q37).
 - **Divide & Conquer:** Merge Sort (Q18), Quick Sort (Q21).
 
+- reversePairs (Q63)
 - mergeIntervals (Q62)
 - countInversions (Q60)
 ## 8. Matrix Manipulation

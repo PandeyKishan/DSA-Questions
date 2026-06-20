@@ -8,6 +8,7 @@ This document serves as a cheat sheet for the common patterns and algorithm name
 *Used for processing sorted arrays or in-place modifications.*
 - **Slow & Fast Pointers:** Remove Duplicates (Q25), Detect Cycle.
 - **Opposite Ends:** Reverse Array (Q9), Palindrome String (Q10), Two Sum in sorted array, Three Sum (Q51), Four Sum (Q55), Merge Sorted Arrays (Q58).
+
 ## 2. Prefix Sum + Hash Map Pattern
 *Used for subarray problems with specific sums (handles negative numbers/zeros).*
 - **Index Tracking:** Longest Subarray with Sum 0 (Q35), Longest Subarray with XOR Sum K (Q56).
@@ -16,36 +17,29 @@ This document serves as a cheat sheet for the common patterns and algorithm name
 
 ## 3. Sliding Window Pattern
 *Used for contiguous subsegments (mostly for positive numbers).*
-- **Variable Window:** Longest Subarray with Sum K (Q34).
-- **Fixed Window:** Max sum of subarray of size K.
+- **Variable Window:** Longest Subarray with Sum K (Q34), Max Consecutive Ones III (Q64).
+- **Fixed Window:** Max sum of subarray of size K, Contains Duplicate II (Q65), Contains Duplicate III (Q66).
 
-- containsDuplicateIII (Q66)
-- containsDuplicateII (Q65)
-- maximumConsecutiveOneIII (Q64)
 ## 4. Voting & Greedy Algorithms
 *Optimized O(N) solutions for specific conditions.*
 - **Boyer-Moore Voting:** Majority Element - 1 (Q38).
 - **Extended Boyer-Moore:** Majority Element - II (Q53).
-- **Kadane’s Algorithm:** Maximum Subarray Sum (Q39).
+- **Kadane’s Algorithm:** Maximum Subarray Sum (Q39), Maximum Product Subarray (Q61).
 - **Greedy Tracking:** Stock Buy and Sell (Q40).
 
-- maximumProductSubarray (Q61)
 ## 5. Mathematical & Bit Manipulation
 - **XOR Logic ($a \oplus a = 0$):** Number appearing once (Q33), Two Unique Elements (Q50).
 - **Combination Logic:** Pascal's Triangle (Q52).
 
-- findRepeatingMissing (Q59)
 ## 6. Cyclic Sort Pattern
 *Used when elements are in the range [1, N].*
-- **"Home Index" Placement:** First Missing Positive (Q49), Find Duplicate Number.
+- **"Home Index" Placement:** First Missing Positive (Q49), Find Duplicate Number, Find Repeating and Missing Number (Q59).
 
 ## 7. Sorting & Partitioning
 - **Dutch National Flag (3-way Partition):** Sort 0s, 1s, 2s (Q37).
-- **Divide & Conquer:** Merge Sort (Q18), Quick Sort (Q21).
+- **Divide & Conquer:** Merge Sort (Q18), Quick Sort (Q21), Count Inversions (Q60), Reverse Pairs (Q63).
+- **Interval Merging:** Merge Overlapping Intervals (Q62).
 
-- reversePairs (Q63)
-- mergeIntervals (Q62)
-- countInversions (Q60)
 ## 8. Matrix Manipulation
 - **In-place Markers:** Set Matrix Zeros (Q45).
 - **Transpose and Reflect:** Rotate Matrix by 90° (Q46).
@@ -56,3 +50,4 @@ This document serves as a cheat sheet for the common patterns and algorithm name
 - **HashSet Sequence Building:** Longest Consecutive Sequence (Q44).
 - **Reversal Algorithm:** Rotate Array by K (Q27).
 - **Prefix & Suffix Products:** Product Without Self (Q54).
+

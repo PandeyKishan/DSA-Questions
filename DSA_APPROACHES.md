@@ -199,11 +199,27 @@ This file contains the detailed optimal approaches for every question solved in 
 58. **Merge Sorted Arrays:**
     - **Approach:** Use **Three Pointers** (`i`, `j`, `k`) starting from the end of both arrays. Compare elements from `nums1` and `nums2`, and place the larger element at the end of `nums1`.
     - **Efficiency:** This optimal approach avoids extra space and unnecessary shifting, completing the merge in $O(M+N)$ time and $O(1)$ space.
-59. Two approaches: 1. Cyclic Sort - Place each number X at index X-1; the index i where arr[i] != i+1 reveals the repeating (arr[i]) and missing (i+1) numbers. 2. XOR Logic - XOR all array elements and numbers 1 to N to find X^Y, then partition into two groups based on the rightmost set bit to isolate the numbers.
-60. Uses **Merge Sort** to count inversions. During the merge step, when a right-half element is smaller than a left-half element, all remaining elements in the left half (from left to mid) form inversions with it. Count these as mid - left + 1 and accumulate.
-61. Provides two optimal approaches: 1. **Prefix & Suffix Product Scan**: Compute running prefix and suffix products, resetting either to 1 if it hits 0. The max product is the maximum seen prefix/suffix product. 2. **Kadane's-style Min/Max Tracking**: Maintain maxProduct and minProduct at each step; swap them when encountering a negative number, then update each using the current element.
-62. Sort the intervals by their starting times. Iterate through each interval: if the result list is empty or the last merged interval's end is less than the current interval's start, add the current interval. Otherwise, merge them by updating the last merged interval's end to the maximum of itself and the current interval's end.
-63. Uses **Merge Sort** to count reverse pairs. Before merging sorted left and right halves, traverse elements in the left half and use a pointer right in the right half to find all elements where arr[left] > 2 * arr[right]. Since both halves are sorted, right moves monotonically, yielding O(N) time per merge step and O(N log N) overall.
-64. **Max Consecutive Ones III:** Maintain a sliding window using two pointers (i and j). Expand the window with j; if a zero is encountered, increment a zero counter. If the zero counter exceeds k, contract the window from the left by moving i and decrementing the zero counter if nums[i] is zero. Track the maximum window size (j - i + 1) at each step.
-65. **Contains Duplicate II:** Maintain a sliding window of size k using a HashSet. If the current element is already present in the set, a duplicate exists within distance k (return true). Otherwise, add the element and, if the window size exceeds k, remove the oldest element from the set (nums[i - k]).
-66. **Contains Duplicate III:** Divide elements into buckets of size valueDiff + 1. Use a HashMap to maintain a sliding window of size indexDiff by storing bucket ID to value mappings. If the current element's bucket or any of its adjacent buckets contains a value within valueDiff of the current element, return true. Remove the oldest element's bucket when the window size exceeds indexDiff.
+59. **Find Repeating and Missing Number:**
+    - **Approach:** Two approaches: 1. **Cyclic Sort** - Place each number X at index X-1; the index i where arr[i] != i+1 reveals the repeating (arr[i]) and missing (i+1) numbers. 2. **XOR Logic** - XOR all array elements and numbers 1 to N to find X^Y, then partition into two groups based on the rightmost set bit to isolate the numbers.
+
+60. **Count Inversions in an Array:**
+    - **Approach:** Uses **Merge Sort** to count inversions. During the merge step, when a right-half element is smaller than a left-half element, all remaining elements in the left half (from left to mid) form inversions with it. Count these as mid - left + 1 and accumulate.
+
+61. **Maximum Product Subarray:**
+    - **Approach:** Provides two optimal approaches: 1. **Prefix & Suffix Product Scan**: Compute running prefix and suffix products, resetting either to 1 if it hits 0. The max product is the maximum seen prefix/suffix product. 2. **Kadane's-style Min/Max Tracking**: Maintain maxProduct and minProduct at each step; swap them when encountering a negative number, then update each using the current element.
+
+62. **Merge Overlapping Intervals:**
+    - **Approach:** Sort the intervals by their starting times. Iterate through each interval: if the result list is empty or the last merged interval's end is less than the current interval's start, add the current interval. Otherwise, merge them by updating the last merged interval's end to the maximum of itself and the current interval's end.
+
+63. **Reverse Pairs:**
+    - **Approach:** Uses **Merge Sort** to count reverse pairs. Before merging sorted left and right halves, traverse elements in the left half and use a pointer right in the right half to find all elements where arr[left] > 2 * arr[right]. Since both halves are sorted, right moves monotonically, yielding O(N) time per merge step and O(N log N) overall.
+
+64. **Max Consecutive Ones III:**
+    - **Approach:** Maintain a sliding window using two pointers (i and j). Expand the window with j; if a zero is encountered, increment a zero counter. If the zero counter exceeds k, contract the window from the left by moving i and decrementing the zero counter if nums[i] is zero. Track the maximum window size (j - i + 1) at each step.
+
+65. **Contains Duplicate II:**
+    - **Approach:** Maintain a sliding window of size k using a HashSet. If the current element is already present in the set, a duplicate exists within distance k (return true). Otherwise, add the element and, if the window size exceeds k, remove the oldest element from the set (nums[i - k]).
+
+66. **Contains Duplicate III:**
+    - **Approach:** Divide elements into buckets of size valueDiff + 1. Use a HashMap to maintain a sliding window of size indexDiff by storing bucket ID to value mappings. If the current element's bucket or any of its adjacent buckets contains a value within valueDiff of the current element, return true. Remove the oldest element's bucket when the window size exceeds indexDiff.
+

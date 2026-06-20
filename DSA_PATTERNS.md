@@ -19,6 +19,7 @@ This document serves as a cheat sheet for the common patterns and algorithm name
 - **Variable Window:** Longest Subarray with Sum K (Q34).
 - **Fixed Window:** Max sum of subarray of size K.
 
+- maximumConsecutiveOneIII (Q64)
 ## 4. Voting & Greedy Algorithms
 *Optimized O(N) solutions for specific conditions.*
 - **Boyer-Moore Voting:** Majority Element - 1 (Q38).
